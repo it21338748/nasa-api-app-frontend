@@ -20,6 +20,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<LoginPage />} />
         <Route
           path="/api/apod"
           element={isLoggedIn ? <APOD /> : <Navigate to="/api/login" />}
